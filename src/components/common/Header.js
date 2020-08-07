@@ -5,14 +5,14 @@ import {Link} from 'react-router-dom'
 const Header = (props) => {
     return(
         <div>
-            <div className="navBar">
+            <div className="navbar">
                 <div id="logo" style={{position: "relative", float: "left"}}><img style={{height: "100px"}} src="images/logo.svg"/></div>
                 <div id="items" style={{paddingTop: "20px"}}>
-                    <div id="navbarItem"><Link style={{color: "dimgrey", textAlign: "center", textDecoration: "none", float: "left", fontSize: "20px"}} to="">Home</Link></div>
-                    <div id="navbarItem"> | </div>
-                    <div id="navbarItem"><Link style={{color: "dimgrey", textAlign: "center", textDecoration: "none", float: "left", fontSize: "20px"}} to="/shop">Shop</Link></div>
-                    <div id="navbarItem"> | </div>
-                    <div id="navbarItem"><Link style={{color: "dimgrey", textAlign: "center", textDecoration: "none", float: "left", fontSize: "20px"}} to="/contact">Contact</Link></div>  
+                    <div class="navbar-item"><Link style={{color: "dimgrey", textAlign: "center", textDecoration: "none", float: "left", fontSize: "20px"}} to="">Home</Link></div>
+                    <div class="navbar-item"> | </div>
+                    <div class="navbar-item"><Link style={{color: "dimgrey", textAlign: "center", textDecoration: "none", float: "left", fontSize: "20px"}} to="/shop">Shop</Link></div>
+                    <div class="navbar-item"> | </div>
+                    <div class="navbar-item"><Link style={{color: "dimgrey", textAlign: "center", textDecoration: "none", float: "left", fontSize: "20px"}} to="/contact">Contact</Link></div>  
                 </div>
                 <div id="cart">
                     <Link to="/cart"><img src="images/cart.png" id="cartImg" alt="shopping cart icon"/>
