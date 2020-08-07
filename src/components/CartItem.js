@@ -9,9 +9,9 @@ function CartItem(props){
         props.decreasePrice(props.price)
     }
     return(
-        <div className="cartItem">
+        <div className="cart-item">
             <div id="thumb"><img style={{height: "100px"}} src={props.img} alt={props.title}/></div>
-            <div id="cartInfo">
+            <div className="cart-info">
                 <div style={{width: "25%"}}>{props.title}</div>
                 <div style={{width: "25%"}}>{props.amount}</div>
                 <div style={{width: "25%"}}>{props.price}</div>
