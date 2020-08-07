@@ -15,7 +15,7 @@ function Cart(props){
                 {
                     props.userCart.map(p => <CartItem {...p}/>)
                 }
-                <div id="sum">${props.price.toFixed(2)}</div>
+                <div className="cart-sum">${props.price.toFixed(2)}</div>
             </div>
             
         </div>

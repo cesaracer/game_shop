@@ -1,0 +1,24 @@
+.footer {
+  float: left;
+  margin-top: 100px;
+  height: 200px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer-item {
+  padding-bottom: 10px;
+  background-color: dimgray;
+  color: white;
+  height: 100%;
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-item {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

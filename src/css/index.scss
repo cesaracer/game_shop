@@ -1,1 +1,165 @@
-@import "./product", "./navbar", "./cart";
+@import "./product", "./navbar", "./cart", "./footer";
+
+.inventory{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #addBtn{
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    color: white;
+    border-radius: 5px;
+    background-color: red;
+  }
+  
+  #addBtn:hover{
+    background-color: darkred;
+  }
+  
+  #thumb{
+    width: 20%;
+    float: left;
+  }
+  
+  #removeBtn{
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .deals{
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 100px;
+    
+  }
+  
+  .deals img{
+    width: 150px;
+    height: 150px;
+  }
+  
+  #content{
+    position: relative;
+    text-align: center;
+    width: 33%;
+    float: left;
+    background-color: rgba(227, 250, 165, 0.658);
+  }
+  
+  #title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    color: dimgray;
+    width: 60%;
+    border-bottom: solid red 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #icon{
+    padding-right: 15px;
+    margin-bottom: 10px;
+    height: 25px;
+    float: right;
+  }
+  
+  .socials{
+    z-index: 1;
+    border: solid black 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  
+  td{
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  #message{
+    width: 30%;  
+    float: left;
+  }
+  
+  .contact{
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+  }
+  
+  #map{
+    width: 60%;
+    float: left;
+  }
+  
+  #mapImg{
+    width: 80%;
+    float: left;
+    margin-left: 20%;
+  }
+  
+  #mobileBanner{
+    visibility: hidden;
+  }
+
+@media screen and (max-width: 700px){
+  
+    .contact{
+        width: 80%;
+    }
+
+    #logo{
+      visibility: hidden;
+      width: 0%;
+    }
+    
+    #content{
+      margin-bottom: 100px;
+      width: 100%;
+    }
+  
+    #message{
+      width: 100%;
+    }
+  
+    #map{
+      width: 100%;
+    }
+  
+    #mapImg{
+      width: 100%;
+      margin-top: 50px;
+      margin-left: 0%;
+    }
+
+    #bannerFont{
+      visibility: hidden;
+      height: 0%;
+      width: 0%;
+    }
+  
+    #mobileBanner{
+      color: white;
+      background-color: black;
+      visibility: visible;
+      height: 500px;
+      margin-top: -50px;
+    }
+  
+    #bannerImg{
+      visibility: hidden;
+      width:0px;
+      height: 0px;
+    }
+}

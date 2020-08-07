@@ -3,7 +3,7 @@ import React from 'react'
 function Footer(){
     return(
         <div className="footer">
-            <div id="footerItem">
+            <div className="footer-item">
                 <h2>Game Shop</h2>
                 <div>
                     <h4>Home</h4>
@@ -11,7 +11,7 @@ function Footer(){
                     <h4>Contact</h4>
                 </div>
             </div>
-            <div id="footerItem">
+            <div className="footer-item">
                 <h2>About</h2>
                 <div>
                     <h4>Meet the Founder</h4>
@@ -20,7 +20,7 @@ function Footer(){
                     <h4>Legal Resources</h4>
                 </div>
             </div>
-            <div id="footerItem">
+            <div className="footer-item">
                 <h2>Our Partners</h2>
                 <div>
                     <h4>Sony</h4>

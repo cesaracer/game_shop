@@ -10,9 +10,9 @@ function Product(props){
     }
     return(
         <div className="product">
-            <div style={{height:"70%", width: "100%", float: "left"}}>
-                <img id="pImg" src={props.img} alt="Game cover"/>
-                <h4 id="pTitle">{props.title}</h4>
+            <div id="" style={{height:"70%", width: "100%", float: "left"}}>
+                <img className="product-img" src={props.img} alt="Game cover"/>
+                <h4 className="product-title">{props.title}</h4>
             </div>
             <div style={{height: "30%", width: "100%"}}>
                 <h5>${props.price}</h5>
@@ -24,7 +24,6 @@ function Product(props){
                     img: props.img
                 })}>Add</h4>
             </div>
-            
         </div>
     )
 }

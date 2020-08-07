@@ -53,4 +53,41 @@
   margin-top: 25px;
   margin-right: 0px;
 }
+
+.cart-info {
+  padding-top: 40px;
+  text-align: center;
+  height: 100%;
+  width: 80%;
+  float: left;
+}
+
+.cart-info div {
+  float: left;
+}
+
+.cart-sum {
+  height: 16px;
+  border-radius: 8px;
+  color: white;
+  padding: 8px;
+  display: block;
+  background-color: #046d00;
+  float: right;
+}
+
+@media screen and (max-width: 700px) {
+  .cart {
+    width: 100%;
+  }
+  .cart-img {
+    width: 30px;
+  }
+  .cart-icon {
+    position: fixed;
+    float: left;
+    margin-right: 10px;
+    width: 10%;
+  }
+}
 /*# sourceMappingURL=cart.css.map */
