@@ -8,15 +8,16 @@ const Header = (props) => {
             <div className="navbar">
                 <div id="logo" style={{position: "relative", float: "left"}}><img style={{height: "100px"}} src="images/logo.svg"/></div>
                 <div id="items" style={{paddingTop: "20px"}}>
-                    <div class="navbar-item"><Link style={{color: "dimgrey", textAlign: "center", textDecoration: "none", float: "left", fontSize: "20px"}} to="">Home</Link></div>
+                    <div class="navbar-item"><Link to="">Home</Link></div>
                     <div class="navbar-item"> | </div>
-                    <div class="navbar-item"><Link style={{color: "dimgrey", textAlign: "center", textDecoration: "none", float: "left", fontSize: "20px"}} to="/shop">Shop</Link></div>
+                    <div class="navbar-item"><Link to="/shop">Shop</Link></div>
                     <div class="navbar-item"> | </div>
-                    <div class="navbar-item"><Link style={{color: "dimgrey", textAlign: "center", textDecoration: "none", float: "left", fontSize: "20px"}} to="/contact">Contact</Link></div>  
+                    <div class="navbar-item"><Link to="/contact">Contact</Link></div>  
                 </div>
-                <div id="cart">
-                    <Link to="/cart"><img src="images/cart.png" id="cartImg" alt="shopping cart icon"/>
-                    <p style={{display: "block", textAlign: "center", backgroundColor: "red", color: "white", width: "17px", height: "17px", borderRadius: "10px", position: "absolute", zIndex: "1", marginTop: "25px", marginRight: "0px"}}>{props.count}</p></Link>
+                <div class="cart-icon">
+                    <Link to="/cart"><img src="images/cart.png" id="cart-icon-id" alt="shopping cart icon"/>
+                        <p>{props.count}</p>
+                    </Link>
                 </div>
             </div>
         </div>
