@@ -18,4 +18,17 @@
 .product-description:hover {
   opacity: 100%;
 }
-/*# sourceMappingURL=product.css.map */
+
+.navbar {
+  color: dimgray;
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.navbar-item {
+  float: left;
+  margin: 10px;
+}
+/*# sourceMappingURL=index.css.map */
