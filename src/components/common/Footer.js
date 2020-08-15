@@ -16,7 +16,7 @@ function Footer(){
                 <div>
                     <h4>Meet the Founder</h4>
                     <h4>Careers</h4>
-                    <h4>Website Term of Service</h4>
+                    <h4>Terms of Service</h4>
                     <h4>Legal Resources</h4>
                 </div>
             </div>
