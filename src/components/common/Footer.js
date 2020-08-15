@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer(){
     return(
@@ -6,28 +7,27 @@ function Footer(){
             <div className="footer-item">
                 <h2>Game Shop</h2>
                 <div>
-                    <h4>Home</h4>
-                    <h4>Shop</h4>
-                    <h4>Contact</h4>
+                    <Link to="/"><h4>Home</h4></Link>
+                    <Link to="/shop"><h4>Shop</h4></Link>
+                    <Link to="/contact"><h4>Contact</h4></Link>
                 </div>
             </div>
             <div className="footer-item">
                 <h2>About</h2>
                 <div>
-                    <h4>Meet the Founder</h4>
-                    <h4>Careers</h4>
-                    <h4>Terms of Service</h4>
-                    <h4>Legal Resources</h4>
+                    <a href="https://cesaracer.github.io"><h4>Meet the Founder</h4></a>
+                    <Link to="#"><h4>Careers</h4></Link>
+                    <Link to="#"><h4>Terms of Service</h4></Link>
+                    <Link to="#"><h4>Legal Resources</h4></Link>
                 </div>
             </div>
             <div className="footer-item">
                 <h2>Our Partners</h2>
                 <div>
-                    <h4>Sony</h4>
-                    <h4>Microsoft</h4>
-                    <h4>Nintendo</h4>
-                    <h4>IBM</h4>
-                    <h4>AMD</h4>
+                    <a href="https://sony.com"><h4>Sony</h4></a>
+                    <a href="https://microsoft.com"><h4>Microsoft</h4></a>
+                    <a href="https://nintendo.com"><h4>Nintendo</h4></a>
+                    <a href="https://amd.com"><h4>AMD</h4></a>
                 </div>
                 
             </div>
