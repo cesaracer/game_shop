@@ -1,14 +1,14 @@
 .footer{
+    background-color: dimgray;
     float: left;
     margin-top: 100px;
-    height: 200px;
-    bottom: 0px;
     width: 100%;
+    overflow: hidden;
 }
   
 .footer-item{
     padding-bottom: 10px;
-    background-color: dimgray;
+    
     color: white;
     height: 100%;
     width: 33%;
@@ -17,6 +17,9 @@
 }
 
 @media screen and (max-width: 700px){
+    .footer{
+        overflow: hidden;
+    }
     .footer-item{
         width: 100%;
     }

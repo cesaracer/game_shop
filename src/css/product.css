@@ -1,22 +1,10 @@
 .product {
   position: relative;
-  height: 300px;
-  width: 33%;
+  width: 25%;
   float: left;
   text-align: center;
   margin-bottom: 50px;
-}
-
-.product-description {
-  position: static;
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  opacity: 0%;
-}
-
-.product-description:hover {
-  opacity: 100%;
+  border-radius: 15px;
 }
 
 .product-img {

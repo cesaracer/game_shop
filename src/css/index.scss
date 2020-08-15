@@ -1,11 +1,16 @@
 @import "./product", "./navbar", "./cart", "./footer";
 
+body{
+  font-family: monospace;
+  overflow-x: hidden;
+}
+
 .inventory{
     width: 65%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   #addBtn{
     cursor: pointer;
     margin-right: auto;
@@ -14,10 +19,9 @@
     color: white;
     border-radius: 5px;
     background-color: red;
-  }
-  
-  #addBtn:hover{
-    background-color: darkred;
+    &:hover{
+      background-color: darkred;
+    }
   }
   
   #thumb{
@@ -35,22 +39,64 @@
     width: 70%;
     margin-left: 15%;
     margin-bottom: 100px;
-    
+    .deals-body{
+      padding: 25px;
+      overflow: hidden;
+    }
+  }
+
+  .content{
+    width: 100%;
+    background-color: rgb(236, 65, 65);
+    overflow: hidden;
+    .content-img{
+      width: 30%;
+      float: left;
+      padding: 50px;
+    }
+    p{
+      font-size: 18px;
+      color: white;
+    }
+    img{
+      height: 200px;
+    }
+  }
+
+  .content-left{
+    @extend .content;
+    animation-name: load-left;
+    animation-duration: 3s;
+  }
+
+  .content-right{
+    @extend .content;
+    background-color: white;
+    animation-name: load-right;
+    animation-duration: 3s;
+    p{
+      color: black;
+    }
   }
   
-  .deals img{
-    width: 150px;
-    height: 150px;
+  @keyframes load-left{
+    0%{
+      margin-left: -100%;
+    }
+    100%{
+      margin-left: 0%;
+    }
   }
-  
-  #content{
-    position: relative;
-    text-align: center;
-    width: 33%;
-    float: left;
-    background-color: rgba(227, 250, 165, 0.658);
+
+  @keyframes load-right{
+    0%{
+      margin-left: 100%;
+    }
+    100%{
+      margin-right: 0%;
+    }
   }
-  
+
   #title{
     margin-left: auto;
     margin-right: auto;
@@ -60,6 +106,7 @@
     border-bottom: solid red 5px;
     border-radius: 5px;
     text-align: center;
+    font-size: 25px;
   }
   
   #icon{
@@ -80,8 +127,8 @@
     right: 10px;
   }
   
-  
   td{
+    color: dimgray;
     padding: 15px;
     font-size: 16px;
   }
@@ -108,10 +155,6 @@
     float: left;
     margin-left: 20%;
   }
-  
-  #mobileBanner{
-    visibility: hidden;
-  }
 
 @media screen and (max-width: 700px){
   
@@ -122,11 +165,6 @@
     #logo{
       visibility: hidden;
       width: 0%;
-    }
-    
-    #content{
-      margin-bottom: 100px;
-      width: 100%;
     }
   
     #message{
@@ -143,23 +181,9 @@
       margin-left: 0%;
     }
 
-    #bannerFont{
-      visibility: hidden;
-      height: 0%;
-      width: 0%;
-    }
-  
-    #mobileBanner{
-      color: white;
-      background-color: black;
-      visibility: visible;
-      height: 500px;
-      margin-top: -50px;
-    }
-  
-    #bannerImg{
-      visibility: hidden;
-      width:0px;
-      height: 0px;
+    .content{
+      img{
+        height: 100px;
+      }
     }
 }
